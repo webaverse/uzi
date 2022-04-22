@@ -371,14 +371,13 @@ export default e => {
               hitDirection.normalize();
               
               // const willDie = targetApp.willDieFrom(damage);
-              // DISABLED HIT FOR DEBUG
-              /*targetApp.hit(damage, {
+              targetApp.hit(damage, {
                 collisionId: result.objectId,
                 hitPosition,
                 hitDirection,
                 hitQuaternion,
                 // willDie,
-              });*/
+              });
             } else {
               console.warn('no app with physics id', result.objectId);
             }
