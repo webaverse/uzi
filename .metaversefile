@@ -1,6 +1,6 @@
 {
   "name": "Uzi",
-  "description": "mirror",
+  "description": "Weapon",
   "start_url": "index.js",
   "components": [
     {
