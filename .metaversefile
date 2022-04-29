@@ -1,5 +1,6 @@
 {
   "name": "Uzi",
+  "description": "mirror",
   "start_url": "index.js",
   "components": [
     {
