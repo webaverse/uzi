@@ -211,7 +211,7 @@ export default e => {
         {
           explosionApp.position.copy(gunApp.position)
             .add(
-              new THREE.Vector3(0, 0.1, 0.7)
+              new THREE.Vector3(0, 0.1, 0.25)
                 .applyQuaternion(gunApp.quaternion)
             );
           explosionApp.quaternion.copy(gunApp.quaternion);
