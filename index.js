@@ -115,9 +115,9 @@ export default e => {
   e.waitUntil((async () => {
     {
       let u2 = `https://webaverse.github.io/pixelsplosion/`;
-      if (/^https?:/.test(u2)) {
-        u2 = '/@proxy/' + u2;
-      }
+      // if (/^https?:/.test(u2)) {
+      //   u2 = '/@proxy/' + u2;
+      // }
       const m = await metaversefile.import(u2);
       // console.log('group objects 3', u2, m);
       explosionApp = metaversefile.createApp({
@@ -140,9 +140,9 @@ export default e => {
     
     {
       let u2 = `${baseUrl}uzi.glb`;
-      if (/^https?:/.test(u2)) {
-        u2 = '/@proxy/' + u2;
-      }
+      // if (/^https?:/.test(u2)) {
+      //   u2 = '/@proxy/' + u2;
+      // }
       const m = await metaversefile.import(u2);
       gunApp = metaversefile.createApp({
         name: u2,
