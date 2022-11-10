@@ -22,7 +22,7 @@ export default e => {
   const app = useApp();
   const physics = usePhysics();
   const scene = useScene();
-  
+  app.subApps = [];
   app.name = 'Uzi';
 
   const worldLights = app;
@@ -142,6 +142,7 @@ export default e => {
 
       await explosionApp.addModule(m);
       scene.add(explosionApp);
+      app.subApps.push(explosionApp)
       explosionApp.add( bulletPointLight );
       // metaversefile.addApp(explosionApp);
     }
@@ -204,6 +205,7 @@ export default e => {
       }
       await gunApp.addModule(m);
       scene.add(gunApp);
+      app.subApps.push(gunApp);
       // metaversefile.addApp(gunApp);
       
       gunApp.addEventListener('use', e => {
